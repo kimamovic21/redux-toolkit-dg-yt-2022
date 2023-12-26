@@ -1,0 +1,47 @@
+React Redux Full Course for Beginners | Redux Toolkit Complete Tutorial
+
+Section 1 - Redux Toolkit Intro
+-u terminal instaliramo react-redux paket
+-u terminal instaliramo redux toolkit paket
+-u folderu src kreiramo folderu app
+-u folderu app kreiramo store.js fajl
+-u store.js fajl importujemo configureStore
+-kreiramo i eksportujemo varijablu const stores
+-kreiramo objekt reducer
+-u index.js fajl importujemo store
+-u index.js fajl importujemo komponentu Provider
+-u return izjavi dodajemo komponentu Provider kao roditelj element
+-komponenti Provider dodajemo prop store i proslijedujemo vrijednost store
+-kreiramo folder features
+-u folderu features kreiramo folder counter
+-u folderu counter kreiramo counterSlice.js fajl
+-u counterSlice.js fajl importujemo createSlice
+-kreiramo objekt initialState
+-kreiramo i eksportujemo varijablu const counterSlice
+-u funkciji createSlice kreiramo objekt
+-u tom objektu kreiramo key - value pair vrijednost
+-kreiramo objekt reducer
+-u objektu reducers kreiramo vise funkcija
+-eksportujemo kreirane funkcije
+-eksportujemo counterSlice.reducer
+-u store.js fajl importujemo counterReducer
+-u folderu counter kreiramo komponentu Counter.jsx
+-u komponentu Counter.jsx importujemo React Hooks useSelector i useDispatch
+-importujemo funkcije
+-kreiramo varijablu const count
+-kreiramo varijablu const dispatch
+-u return izjavi kreiramo HTML elemente
+-button elementima dodajemo onClick dogadaje
+-u onClick dogadaje proslijedujemo vrijednost dispatch funkcija
+-u App.js fajl importujemo komponentu Counter.jsx
+-u komponentu Counter.jsx importujemo React Hook useState
+-kreiramo const [incrementAmount, setIncrementAmount] = useState(0)
+-kreiramo varijablu const addValue
+-kreiramo funkciju resetAll()
+-kreiramo input element
+-input elementu dodajemo atribute i dogadaj onChange
+-u dogadaj onChange proslijedujemo vrijednost funkcije setIncrementAmount
+-kreiramo div element i unutar njega dva button elementa
+-button elementima dodajemo dogadaje onClick
+-u dogadaj onClick od Add Amount button elementa proslijedimo dispatch funkciju
+-u dogadaj onClick od Reset button elementa proslijedimo resetAll funkciju
