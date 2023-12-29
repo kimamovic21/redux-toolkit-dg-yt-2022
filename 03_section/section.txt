@@ -1,0 +1,43 @@
+React Redux Full Course for Beginners | Redux Toolkit Complete Tutorial
+
+Section 3 - Async Logic & Thunks
+-u fajlu postsSlice.js kreiramo objekt initialState
+-dodajemo state.posts
+-importujemo createAsyncThunk
+-kreiramo varijablu const POSTS_URL
+-u terminalu instaliramo axios paket
+-importujemo axios
+-kreiramo i eksportujemo varijablu fetchPosts 
+-kreiramo funkciju extraReducers sa parametrom builder
+-u komponentu PostsList.jsx importujemo React Hook useDispatch
+-importujemo React Hook useEffect
+-kreiramo i eksportujemo funkcije getPostsStatus i getPostsError
+-u komponentu PostsList.jsx importujemo funkcije getPostsStatus, getPostsError i fetchPosts
+-kreiramo varijablu const dispatch
+-kreiramo varijable const postStatus i const postsError
+-kreiramo React Hook useEffect()
+-u useEffect() dodajemo uslov if
+-u uslov if dodajemo funkciju dispatch
+-kreiramo komponentu PostsExcerpt.jsx
+-funkciji PostsExcerpt dodajemo parametar props {post}
+-u komponentu PostsList.jsx importujemo PostsExcerpt.jsx komponentu
+-kreiramo varijablu let content
+-dodajemo uslove if i else if
+-u return izjavu dodajemo varijablu content
+-u usersSlice.js fajl importujemo createAsyncThunk
+-importujemo axios
+-kreiramo varijablu const USERS_URL
+-kreiramo prazan niz initialState 
+-kreiramo i eksportujemo funkciju fetchUsers
+-kreiramo varijablu const response
+-kreiramo funkciju extraReducers sa parametrom builder
+-u index.js fajl importujemo funkciju fetchUsers
+-dodajemo store.dispatch()
+-u postSlice.js fajlu kreiramo i eksportujemo funkciju addNewPost
+-dodajemo addCase za addNewPost
+-u komponentu AddPostForm.jsx importujemo addNewPost
+-kreiramo const [addRequestStatus, setAddRequestStatus] = useState('idle')
+-pravimo izmjene u varijabli const canSave
+-pravimo izmjene u funkciji onSavePostClicked()
+-u funkciji onSavePostClicked() dodajemo uslov if
+-u uslovu if dodajemo try - catch - finally blokove koda
