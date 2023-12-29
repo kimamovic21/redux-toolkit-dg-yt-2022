@@ -1,0 +1,89 @@
+React Redux Full Course for Beginners | Redux Toolkit Complete Tutorial
+
+Section 2 - App Structure & Data Flow
+-u folderu features kreiramo folder posts
+-u folderu posts kreiramo postsSlice.js fajl
+-u postsSlice.js fajl importujemo createSlice
+-u postsSlice.js fajlu kreiramo niz initialState
+-kreiramo varijablu const postsSlice
+-u store.js fajl importujemo postReducer
+-u objekt reducer dodajemo posts: postsReducers
+-u folder posts kreiramo PostsList.jsx komponentu
+-u komponentu PostsList.jsx importujemo React Hook useSelector
+-kreiramo varijablu const posts
+-kreiramo varijablu const renderedPosts
+-u return izjavi dodajemo varijablu renderedPosts
+-u postsSlice.js fajlu kreiramo i eksportujemo varijablu const selectAllPosts
+-u komponentu PostsList.jsx importujemo varijablu selectAllPosts
+-u App.js fajl importujemo komponentu PostsList.jsx
+-u postsSlice.js fajlu kreiramo fukciju postAdded sa dva parametra state i action
+-eksportujemo funkciju postAdded
+-u folder posts kreiramo AddPostForm.jsx komponentu
+-u AddPostForm.jsx komponentu importujemo React Hook useState
+-kreiramo varijablu const dispatch
+-kreiramo const [title, setTitle] = useState('')
+-kreiramo const [content, setContent] = useState('')
+-kreiramo funkciju onTitleChanged 
+-kreiramo funkciju onContentChanged
+-u return izjavi kreiramo HTML elemente
+-importujemo React Hook useDispatch
+-importujemo nanoid
+-importujemo postAdded
+-kreiramo funkciju onSavePostClicked()
+-u funkciju onSavePostClicked kreiramo uslov if
+-u uslov if dodajemo funkcije, dispatch(), setTitle() i setContent()
+-button elementu proslijedujemo onSavePostClicked funkciju
+-u App.js fajl importujemo komponentu AddPostForm
+-u postsSlice.js fajl kreiramo funkciju prepare sa parametrima title i content
+-importujemo nanoid
+-kreiramo folder users
+-u folderu users kreiramo usersSlice.js fajl
+-kreiramo varijablu const initialState
+-kreiramo varijablu const usersSlice
+-kreiramo i eksportujemo varijablu selectAllUsers
+-eksportujemo usersSlice.reducer
+-u store.js fajl importujemo usersReducer
+-u objekt reducer dodajemo users: usersReducer
+-u komponentu AddPostForm.jsx importujemo React Hook useSelector
+-importujemo selectAllUsers
+-kreiramo const [userId, setUserId] = useState('')
+-kreiramo varijablu const users
+-kreiramo funkciju onUserChanged()
+-kreiramo varijablu const usersOptions
+-kreiramo varijabul const canSave 
+-button elementu Save Post dodajemo atribut disabled
+-u atribud disabled dodajemo varijablu canSave
+-u posts folderu kreiramo komponentu PostUser.jsx
+-u komponentu PostUser.jsx importujemo React Hook useSelector
+-importujemo selectAllUsers
+-kreiramo varijablu const users
+-kreiramo varijablu const author
+-u PostList.jsx komponentu importujemo PostAuthor.jsx komponentu
+-funkciji PostAuthor dodajemo parametar props {userId}
+-u terminalu instaliramo paket date-fns
+-u postsSlice.js fajl importujemo sub
+-u payload objekt dodajemo date
+-u folderu posts kreiramo komponentu TimeAgo.jsx
+-u komponentu TimeAgo.jsx importujemo parseISO i formatDistanceToNow 
+-funkciji TimeAgo dodajemo parametar prop {timestamp}
+-kreiramo varijablu let timeAgo 
+-kreiramo uslov if 
+-u uslovu if kreiramo varijable date i timePeriod
+-inicijaliziramo varijablu timeAgo
+-u return izjavu dodajemo HTML elemente
+-u komponentu PostsList.jsx importujemo komponentu TimeAgo.jsx 
+-kreiramo varijablu const orderedPosts 
+-u postsSlice.js fajlu, u initialState nizu, objektima dodajemo objekte reactions
+-u payload objekt dodajemo objekt reactions
+-kreiramo funkciju reactionAdded() sa dva parametra state i action
+-eksportujemo funkciju reactionAdded
+-u folderu posts kreiramo komponentu ReactionButton.jsx
+-u komponentu ReactionButton.jsx importujemo React Hook useDispatch
+-importujemo funkciju reactionAdded
+-kreiramo objekt reactionEmoji
+-funkciji ReactionButton dodajemo parametar prop {post}
+-kreiramo variajablu const dispatch
+-kreiramo varijablu const reactionsButtons
+-u return izjavu dodajemo varijablu reactionButtons
+-u komponentu PostList.jsx imporutjemo komponentu ReactionButtons.jsx
+-komponenti ReactionButtons dodajemo prop post i proslijedujemo post
