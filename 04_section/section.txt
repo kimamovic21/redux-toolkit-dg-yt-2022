@@ -1,0 +1,50 @@
+React Redux Full Course for Beginners | Redux Toolkit Complete Tutorial
+
+Section 4 - Blog Project
+-u postSlice.js fajlu kreiramo i eksportujemo funkciju selectPostById()
+-u folderu posts kreiramo komponentu SinglePostPage.jsx 
+-u komponentu SinglePostPage.jsx importujemo React Hook useSelector
+-importujemo funkciju selectPostById
+-importujemo komponente jsx
+-kreiramo varijablu const post
+-dodajemo uslov if
+-u return izjavi kreiramo HTML elemente
+-u terminalu instaliramo React Router Dom paket
+-u index.js fajl importujemo BrowserRouter as Router, Routes i Route
+-u root.render() dodajemo React Router komponente
+-u folderu src kreiramo folder components
+-u folderu components kreiramo komponentu Layout.jsx
+-u komponentu Layout.jsx importujemo komponentu Outlet 
+-u App.js fajl importujemo komponentu SinglePostPage.jsx
+-importuje komponentu Layout.jsx
+-importujemo Routes i Route
+-u return izjavu dodajemo Routes i Route
+-u komponentu SinglePostPage.jsx importujemo React Hook useParams
+-kreiramo varijablu const { postId }
+-u komponentu PostExcerpt.jsx importujemo komponentu Link
+-u return izjavu dodajemo komponentu Link
+-kreiramo komponentu Header.jsx
+-u komponentu Header.jsx importujemo komponentu Link
+-u komponentu Layout.jsx importujemo komponentu Header.jsx
+-u komponentu SinglePostPage.jsx importujemo komponentu Link
+-kreiramo komponentu EditPostForm.jsx
+-u komponentu EditPostForm.jsx importujemo React Hook useNavigate
+-importujemo React Hook useState
+-importujemo useDispatch i useSelectore
+-importujemo funkcije selectPostById i updatePost
+-kreiramo varijablu postId
+-kreiramo varijablu navigate
+-kreiramo varijablu post
+-kreirmao varijablu users
+-kreiramo varijablu dispatch
+-dodajemo uslov if
+-u return izjavi kreiramo HTML elemente
+-u postSlice.js fajlu kreiramo i eksportujemo funkciju updatePost()
+-dodajemo addCase(updatePost)
+-u App.js fajl importujemo komponentu EditPostForm.jsx
+-u postsSlice.js fajl kreiramo i eksportujemo funkciju deletePost()
+-kreiramo  addCase(deletePost)
+-u komponentu AddPostForm.jsx importujemo React Hook useNavigate
+-kreiramo varijablu const navigate
+-u index.js fajl importujemo funkciju fetchPosts()
+-dodajemo store.dispatch za objave
