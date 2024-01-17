@@ -1,0 +1,29 @@
+React Redux Full Course for Beginners | Redux Toolkit Complete Tutorial
+Section 6 - RTK Query Intro Project
+
+-pokrenemo json server u terminalu sa komandom json-server --watch data/db.json --port 3500
+-kreiramo folder api
+-u folderu api kreiramo apiSlice.js fajl
+-importujemo funkcije createApi, fetchBaseQuery
+-kreiramo funkciju createApi()
+-u funkciju createApi() dodajemo konfiguracioni objekt
+-u konfiguracioni objekt dodajemo property reducerPath, baseQuery, endpoints
+-u reducerPath dodajemo string api
+-u baseQuery dodajemo funkciju fetchBaseQuery({ ... })
+-u endpoints dodajemo anonimnu funkciju sa parametrom builder
+-vrijednost funkcije createApi() pohranjujemo u varijablu const apiSlice
+-eksportujemo varijablu const { useGetTodosQuery }
+-u index.js fajl importujemo komponentu ApiProvider i varijablu apiSlice
+-u return izjavu dodajemo komponentu ApiProvider sa otvorenim i zatvorenim tagom
+-komponenti ApiProvider dodajemo prop api
+-u prop api proslijedujemo varijablu apiSlice
+-u komponentu TodoList.jsx importujemo React Hoook useGetTodosQuery
+-kreiramo varijable const { data, isLoading, isSuccess, isError, error }
+-kreiramo varijablu let content
+-dodajemo uslov if (isLoading)
+-dodajemo uslov else if (isSuccess)
+-dodajemo uslov else if (isError)
+-u apiSlice.js fajlu, u anonimnu funkciju sa parametrom builder dodajemo funkcije getTodos, addTodo, updateTodo
+-u komponenti TodoList.jsx, u funkciju handleSubmit() dodajemo funkciju addTodo({ ... }) i setNewTodo('')
+-u apiSlice.js fajlu, u funkciji createApi(), u konfiguracioni objekt dodajemo property tagTypes
+-u funkciju getTodos, dodajemo property transformResponse
