@@ -12,14 +12,12 @@ store.dispatch(fetchPosts());
 store.dispatch(fetchUsers());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( 
-  <>
-    <Provider store={store}>
-      <Router>
-        <Routes>
-          <Route path="/*" element={<App />} />
-        </Routes>
-      </Router>
-    </Provider>
-  </>
+root.render(
+  <Provider store={store}>
+    <Router>
+      <Routes>
+        <Route path="/*" element={<App />} />
+      </Routes>
+    </Router>
+  </Provider>
 );

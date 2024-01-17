@@ -1,0 +1,4 @@
+React Redux Full Course for Beginners | Redux Toolkit Complete Tutorial
+
+Section 5 - Performance Optimizations
+-u postsSlice.js importujemo funkciju createSelector, createEntiryAdapter
