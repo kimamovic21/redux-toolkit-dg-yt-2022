@@ -1,0 +1,22 @@
+React Redux Full Course for Beginners | Redux Toolkit Complete Tutorial
+Section 7 - Advanced Redux & RTK Query
+
+-u terminalu instaliramo Json server paket
+-u terminal ukucamo komandu npm i json-server
+-kreiramo folder data i db.json fajl unutar njega
+-pokrenemo json server u terminalu sa komandom json-server --watch data/db.json --port 3500
+-u folderu features kreiramo folder api
+-u folderu api kreiramo apiSlice.js fajl
+-u apiSlice.js fajl importujemo funkcije createApi i fetchBaseQuery
+-u apiSlice.js fajlu kreiramo funkciju createApi()
+-u funkciju createApi() dodajemo konfiguracioni objekt
+-vrijednost funkcije createApi() pohranjujemo u varijablu const apiSlice
+-eksportujemo varijablu apiSlice
+-u postsSlice.js importujemo funkciju apiSlice
+-kreiramo i eksportujemo varijablu const extendedApiSlice
+-u store.js fajl importujemo funkciju apiSlice
+-u index.js fajl importujemo funkciju extendedApiSlice
+-u komponentu PostsList.jsx importujemo funkciju useGetPostsQuery
+-u postsSlice.js fajl dodajemo funkcije builder
+-u komponentu AddPostForm.jsx importujemo funkciju useAddNewPostMutation
+-u EditPostForm.jsx komponentu importujemo funkcije iz postsSlice.js fajla
